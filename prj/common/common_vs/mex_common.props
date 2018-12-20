@@ -12,7 +12,7 @@
       <ImportLibrary>
       </ImportLibrary>
       <AdditionalLibraryDirectories>..\..\..\contrib\matlab\sys\$(TargetFolderBase)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libmx.lib;libmex.lib</AdditionalDependencies>
+      <AdditionalDependencies>libmx.lib;libmex.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>..\..\..\src\modulefiles\modulemex1.def</ModuleDefinitionFile>
     </Link>
     <ClCompile>

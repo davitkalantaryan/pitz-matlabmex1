@@ -26,6 +26,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\mex\mex_doocs_names.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7614875C-14B4-4086-A4AF-698D6E6A8CB6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -34,43 +37,43 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -83,6 +86,7 @@
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\win32\sys.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\sys_common.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\doocs_client_common.props" />
+    <Import Project="..\..\common\common_vs\mex_common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -90,6 +94,7 @@
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\win32\sys.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\sys_common.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\doocs_client_common.props" />
+    <Import Project="..\..\common\common_vs\mex_common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -97,6 +102,7 @@
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\x64\sys.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\sys_common.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\doocs_client_common.props" />
+    <Import Project="..\..\common\common_vs\mex_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -104,6 +110,7 @@
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\arm\sys.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\sys_common.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\doocs_client_common.props" />
+    <Import Project="..\..\common\common_vs\mex_common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -111,6 +118,7 @@
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\x64\sys.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\sys_common.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\doocs_client_common.props" />
+    <Import Project="..\..\common\common_vs\mex_common.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -118,6 +126,7 @@
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\arm\sys.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\sys_common.props" />
     <Import Project="$(UDOOCSROOT_AMD64_dev)\dev\vs_props\doocs_client_common.props" />
+    <Import Project="..\..\common\common_vs\mex_common.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

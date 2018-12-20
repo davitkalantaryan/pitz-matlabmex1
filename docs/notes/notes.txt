@@ -1,0 +1,19 @@
+
+https://davitkalantaryan.github.io/udoocs/install/client/udoocs_info.cfg
+https://davitkalantaryan.github.io/udoocs/install/windows/udoocs_updater_script.bat
+https://davitkalantaryan.github.io/udoocs/install/windows/AMD64/doocs_AMD64_client.exe
+
+ENSHOST=%ENSHOST_AMD64_client%:%ENSHOST_AMD64_dev%
+ENSHOST=%ENSHOST_AMD64_client%:%ENSHOST_AMD64_dev%:%ENSHOST_x86_client%
+
+
+ENSHOST -> %ENSHOST_AMD64_dev%:%ENSHOST_AMD64_client%:%ENSHOST_AMD64_server%:%ENSHOST_X86_client%:%ENSHOST_X86_server%
+
+2018 May 02
+Volume Name                    Quota       Used %Used   Partition
+gn.p.d.data5               200000000  150001023   75%          0% 
+
+2018 May 04 08:56 
+Volume Name                    Quota       Used %Used   Partition
+gn.p.d.data5               200000000  179241333   90%          0% 
+
